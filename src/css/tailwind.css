@@ -7,6 +7,13 @@
   :root {
     --color-primary: 29 78 216; /* blue-700 */
     --color-secondary: 219 234 254; /* blue-100 */
+    --color-body: 241 245 249; /* slate-100 */
+    --color-header: 17 24 39; /* gray-900 */
+    --color-text: 100 116 139; /* slate-500 */
+    --color-heading-inverted: 255 255 255; /* white */
+    --color-heading-inverted-hover: 203 213 225; /* slate-300 */
+    --color-menu-button-bg: 31 41 55; /* gray-800 */
+    --color-menu-button-bg-hover: 55 65 81; /* gray-700 */
   }
 
   .theme-juergenschadek {

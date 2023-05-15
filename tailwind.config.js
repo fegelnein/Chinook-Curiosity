@@ -6,6 +6,16 @@ export default {
       colors: {
         primary: "rgb(var(--color-primary) / <alpha-value>)",
         secondary: "rgb(var(--color-secondary) / <alpha-value>)",
+        body: "rgb(var(--color-body) / <alpha-value>)",
+        header: "rgb(var(--color-header) / <alpha-value>)",
+        text: "rgb(var(--color-text) / <alpha-value>)",
+        "heading-inverted":
+          "rgb(var(--color-heading-inverted) / <alpha-value>)",
+        "heading-inverted-hover":
+          "rgb(var(--color-heading-inverted-hover) / <alpha-value>)",
+        "menu-button-bg": "rgb(var(--color-menu-button-bg) / <alpha-value>)",
+        "menu-button-bg-hover":
+          "rgb(var(--color-menu-button-bg-hover) / <alpha-value>)",
       },
       fontFamily: {
         gotham: ['"Gotham Ultra"', "sans-serif"],
