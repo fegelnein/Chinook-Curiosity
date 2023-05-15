@@ -2,3 +2,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: 29 78 216; /* blue-700 */
+    --color-secondary: 219 234 254; /* blue-100 */
+  }
+
+  .theme-juergenschadek {
+    --color-primary: 0 209 219; /* #00D1DB */
+    --color-secondary: 101 117 118; /* #657576 */
+  }
+}
