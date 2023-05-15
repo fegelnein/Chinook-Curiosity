@@ -21,6 +21,7 @@
 4. Prettier installiert
    - `npm install -D prettier prettier-plugin-tailwindcss`
    - `prettier.config.cjs` angelegt mit Einstellungen
+   - [https://prettier.io/](https://prettier.io/)
 
 ---
 
