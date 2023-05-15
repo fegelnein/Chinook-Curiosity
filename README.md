@@ -22,6 +22,9 @@
    - `npm install -D prettier prettier-plugin-tailwindcss`
    - `prettier.config.cjs` angelegt mit Einstellungen
    - [https://prettier.io/](https://prettier.io/)
+5. Themes vorbereitet
+   - `/src/css/tailwind.css` angepasst
+   - `tailwind.config.js` angepasst
 
 ---
 
