@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Gotham Ultra";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/Gotham-Ultra.otf") format("opentype"),
+    url("../fonts/Gotham-Ultra.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Hugme";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Hugme.otf") format("opentype");
+}
