@@ -9,7 +9,7 @@
     />
 
     <!-- META-Informations -->
-    <title>StataRocket - Ein Tailwind CSS - Theme</title>
+    <title>StataRocket - Ein Tailwind CSS Theme</title>
 
     <!-- Icons -->
 
@@ -215,12 +215,12 @@
               class="hidden lg:flex lg:items-center lg:justify-end lg:gap-x-2"
             >
               <a
-                class="rounded-md bg-primary px-3 py-2 text-sm font-semibold text-heading-inverted shadow-sm hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                class="flex items-center justify-center rounded-md bg-primary px-3 py-2 text-sm font-semibold text-heading-inverted shadow-sm hover:bg-primary-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 href="#"
                 >Primary</a
               >
               <a
-                class="rounded-md bg-secondary px-3 py-2 text-sm font-semibold text-primary shadow-sm hover:bg-secondary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
+                class="flex items-center justify-center rounded-md bg-secondary px-3 py-2 text-sm font-semibold text-primary shadow-sm hover:bg-secondary-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
                 href="#"
                 >Secondary</a
               >
@@ -261,7 +261,7 @@
             aria-modal="true"
           >
             <!-- Background backdrop, show/hide based on slide-over state. -->
-            <div class="fixed inset-0 z-10 bg-gray-700/80"></div>
+            <div class="fixed inset-0 z-10 backdrop-blur"></div>
             <div
               class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-4 sm:max-w-sm sm:px-6 sm:ring-1 sm:ring-gray-900/10"
             >
@@ -414,12 +414,12 @@
                 <!-- Buttons -->
                 <div class="flex items-center justify-center gap-x-6">
                   <a
-                    class="rounded-md bg-primary px-3 py-2 text-sm font-semibold text-heading-inverted shadow-sm hover:bg-primary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                    class="flex items-center justify-center rounded-md bg-primary px-3 py-2 text-sm font-semibold text-heading-inverted shadow-sm hover:bg-primary-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                     href="#"
                     >Primary</a
                   >
                   <a
-                    class="rounded-md bg-secondary px-3 py-2 text-sm font-semibold text-primary shadow-sm hover:bg-secondary/90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
+                    class="flex items-center justify-center rounded-md bg-secondary px-3 py-2 text-sm font-semibold text-primary shadow-sm hover:bg-secondary-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
                     href="#"
                     >Secondary</a
                   >
@@ -481,8 +481,62 @@
           </div>
         </header>
       </div>
+
+      <!-- Hero -->
+      <div class="relative flex grow bg-header">
+        <div class="absolute inset-x-0 bottom-0 h-1/2 bg-body"></div>
+        <div class="container mx-auto flex max-w-screen-xl grow sm:p-6 lg:px-8">
+          <div
+            class="relative flex grow items-center justify-center shadow-lg sm:overflow-hidden sm:rounded-2xl"
+          >
+            <div class="absolute inset-0">
+              <img
+                class="h-full w-full object-cover"
+                src="./src/img/statarocket_large.jpg"
+                alt="StataRocket - A Tailwind CSS Theme"
+              />
+              <div
+                class="absolute inset-0 bg-hero-blend opacity-70 mix-blend-multiply"
+              ></div>
+            </div>
+            <div
+              class="relative flex flex-col gap-6 px-4 py-16 text-center sm:px-6 sm:py-24 lg:px-8 lg:py-32"
+            >
+              <h1
+                class="text-4xl font-extrabold tracking-tight text-heading-inverted sm:text-5xl lg:text-6xl"
+              >
+                Heading 1
+              </h1>
+              <h2
+                class="text-3xl font-extralight tracking-tight text-text-muted sm:text-4xl lg:text-5xl"
+              >
+                Heading 2
+              </h2>
+              <p class="mx-auto max-w-lg text-xl text-text-muted sm:max-w-3xl">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta
+                non cupiditate maxime doloremque iste dolores cumque nobis autem
+                voluptas tenetur.
+              </p>
+              <!-- Buttons -->
+              <div
+                class="space-y-4 xs:flex xs:items-center xs:justify-center xs:gap-x-6 xs:space-y-0"
+              >
+                <a
+                  class="flex items-center justify-center rounded-md bg-primary px-4 py-3 font-semibold text-heading-inverted shadow-sm hover:bg-primary-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  href="#"
+                  >Primary</a
+                >
+                <a
+                  class="flex items-center justify-center rounded-md bg-secondary px-4 py-3 font-semibold text-primary shadow-sm hover:bg-secondary-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary"
+                  href="#"
+                  >Secondary</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Hero -->
 
     <!-- Main -->
     <main>

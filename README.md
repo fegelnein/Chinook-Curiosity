@@ -1,4 +1,4 @@
-# StataRocket - Ein Tailwind CSS - Theme
+# StataRocket - Ein Tailwind CSS Theme
 
 ## Live-Demo
 
@@ -10,7 +10,9 @@
 
 ### 2023-05-16
 
-DropDown Menü und Mobiles Menü
+- DropDown Menü und Mobiles Menü
+- Hero eingebaut
+- Korrekturen
 
 ### 2023-05-15
 

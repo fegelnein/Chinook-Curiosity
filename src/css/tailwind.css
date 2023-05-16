@@ -5,22 +5,41 @@
 
 @layer base {
   :root {
-    --color-primary: 29 78 216; /* blue-700 */
-    --color-secondary: 219 234 254; /* blue-100 */
+    --color-primary: 3 105 161; /* sky-700 */
+    --color-primary-hover: 2 132 199; /* sky-600 */
+    --color-secondary: 224 242 254; /* sky-100 */
+    --color-secondary-hover: 226 232 240; /* slate-200 */
     --color-body: 241 245 249; /* slate-100 */
-    --color-header: 17 24 39; /* gray-900 */
+    --color-header: 15 23 42; /* slate-900 */
     --color-text: 100 116 139; /* slate-500 */
-    --color-text-muted: 191 219 254; /* blue-200 */
+    --color-text-muted: 186 230 253; /* sky-200 */
     --color-heading: 2 6 23; /* slate-900 */
     --color-heading-hover: 51 65 85; /* slate-700 */
     --color-heading-inverted: 255 255 255; /* white */
     --color-heading-inverted-hover: 203 213 225; /* slate-300 */
-    --color-menu-button-bg: 31 41 55; /* gray-800 */
-    --color-menu-button-bg-hover: 55 65 81; /* gray-700 */
+    --color-menu-button-bg: 30 41 59; /* slate-800 */
+    --color-menu-button-bg-hover: 51 65 85; /* slate-700 */
+    --color-hero-blend: 71 85 105; /* slate-600 */
   }
 
   .theme-juergenschadek {
     --color-primary: 0 209 219; /* #00D1DB */
     --color-secondary: 101 117 118; /* #657576 */
+  }
+
+  .theme-lighthouse {
+    --color-primary: 29 78 216; /* blue-700 */
+    --color-secondary: 219 234 254; /* blue-100 */
+    --color-body: 243 244 246; /* gray-100 */
+    --color-header: 17 24 39; /* gray-900 */
+    --color-text: 107 114 128; /* gray-500 */
+    --color-text-muted: 191 219 254; /* blue-200 */
+    --color-heading: 17 24 39; /* gray-900 */
+    --color-heading-hover: 75 85 99; /* gray-600 */
+    --color-heading-inverted: 255 255 255; /* white */
+    --color-heading-inverted-hover: 209 213 219; /* gray-300 */
+    --color-menu-button-bg: 31 41 55; /* gray-800 */
+    --color-menu-button-bg-hover: 55 65 81; /* gray-700 */
+    --color-hero-blend: 55 65 81; /* gray-700 */
   }
 }
