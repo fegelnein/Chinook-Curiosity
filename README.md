@@ -1,5 +1,11 @@
 # StataRocket - Ein Tailwind CSS - Theme
 
+## Live-Demo
+
+[https://statarocket.netlify.app/](https://statarocket.netlify.app/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/7654973c-eceb-44d9-b692-8dee1ad421ed/deploy-status)](https://app.netlify.com/sites/statarocket/deploys)
+
 ## ChangeLog
 
 ### 2023-05-16
