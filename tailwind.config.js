@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 export default {
   content: ["./index.html", "./**/*.{js,ts,jsx,tsx,html}"],
   theme: {
@@ -21,6 +24,7 @@ export default {
           "rgb(var(--color-menu-button-bg-hover) / <alpha-value>)",
       },
       fontFamily: {
+        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
         gotham: ['"Gotham Ultra"', "sans-serif"],
         hugme: ["Hugme", "serif"],
       },
