@@ -10,6 +10,9 @@
     --color-body: 241 245 249; /* slate-100 */
     --color-header: 17 24 39; /* gray-900 */
     --color-text: 100 116 139; /* slate-500 */
+    --color-text-muted: 191 219 254; /* blue-200 */
+    --color-heading: 2 6 23; /* slate-900 */
+    --color-heading-hover: 51 65 85; /* slate-700 */
     --color-heading-inverted: 255 255 255; /* white */
     --color-heading-inverted-hover: 203 213 225; /* slate-300 */
     --color-menu-button-bg: 31 41 55; /* gray-800 */

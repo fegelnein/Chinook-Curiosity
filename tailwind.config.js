@@ -9,6 +9,9 @@ export default {
         body: "rgb(var(--color-body) / <alpha-value>)",
         header: "rgb(var(--color-header) / <alpha-value>)",
         text: "rgb(var(--color-text) / <alpha-value>)",
+        "text-muted": "rgb(var(--color-text-muted) / <alpha-value>)",
+        heading: "rgb(var(--color-heading) / <alpha-value>)",
+        "heading-hover": "rgb(var(--color-heading-hover) / <alpha-value>)",
         "heading-inverted":
           "rgb(var(--color-heading-inverted) / <alpha-value>)",
         "heading-inverted-hover":
