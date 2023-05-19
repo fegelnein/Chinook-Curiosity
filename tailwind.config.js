@@ -31,9 +31,9 @@ export default {
         "hero-blend": "rgb(var(--color-hero-blend) / <alpha-value>)",
       },
       fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
-        gotham: ['"Gotham Ultra"', "sans-serif"],
-        hugme: ["Hugme", "serif"],
+        sans: ["var(--font-sans)", ...defaultTheme.fontFamily.sans],
+        heading: ["--var(--font-heading)"],
+        accent: ["var(--font-accent)"],
       },
     },
   },

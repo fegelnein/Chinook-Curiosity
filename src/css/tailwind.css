@@ -20,11 +20,15 @@
     --color-menu-button-bg: 30 41 59; /* slate-800 */
     --color-menu-button-bg-hover: 51 65 85; /* slate-700 */
     --color-hero-blend: 71 85 105; /* slate-600 */
+    --font-sans: "Inter var";
   }
 
   .theme-juergenschadek {
     --color-primary: 0 209 219; /* #00D1DB */
     --color-secondary: 101 117 118; /* #657576 */
+    --font-sans: "Inter var";
+    --font-heading: "Gotham Ultra", sans-serif;
+    --font-accent: "Hugme", serif;
   }
 
   .theme-lighthouse {
@@ -41,5 +45,6 @@
     --color-menu-button-bg: 31 41 55; /* gray-800 */
     --color-menu-button-bg-hover: 55 65 81; /* gray-700 */
     --color-hero-blend: 55 65 81; /* gray-700 */
+    --font-sans: "Inter var";
   }
 }
