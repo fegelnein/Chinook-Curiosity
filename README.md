@@ -8,6 +8,11 @@
 
 ## ChangeLog
 
+## 2023-05-18
+
+- Schriften als CSS-Variablen
+- Theme-Wechsler eingebaut
+
 ### 2023-05-16
 
 - DropDown Menü und Mobiles Menü

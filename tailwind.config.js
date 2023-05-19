@@ -4,6 +4,7 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 export default {
   content: ["./index.html", "./**/*.{js,ts,jsx,tsx,html}"],
+  darkMode: "class",
   theme: {
     screens: {
       xs: "475px",

@@ -1,5 +1,10 @@
 <!DOCTYPE html>
-<html lang="de">
+<html
+  x-data="htmlData()"
+  x-init="window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => setSystemTheme(e.matches ? 'dark' : 'light'))"
+  :class="{ dark: darkMode }"
+  lang="de"
+>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -214,6 +219,209 @@
             <div
               class="hidden lg:flex lg:items-center lg:justify-end lg:gap-x-2"
             >
+              <!-- Theme picker -->
+              <div class="relative z-10">
+                <label class="sr-only">Theme</label>
+                <button
+                  @click="themePickerOpen = ! themePickerOpen"
+                  class="flex h-6 w-6 items-center justify-center rounded-lg bg-white shadow-md shadow-black/5 ring-1 ring-black/5 dark:bg-slate-700 dark:ring-inset dark:ring-white/5"
+                >
+                  <svg
+                    x-show="themePreference != 'system'"
+                    viewBox="0 0 16 16"
+                    class="h-4 w-4 fill-primary dark:hidden"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M7 1a1 1 0 0 1 2 0v1a1 1 0 1 1-2 0V1Zm4 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm2.657-5.657a1 1 0 0 0-1.414 0l-.707.707a1 1 0 0 0 1.414 1.414l.707-.707a1 1 0 0 0 0-1.414Zm-1.415 11.313-.707-.707a1 1 0 0 1 1.415-1.415l.707.708a1 1 0 0 1-1.415 1.414ZM16 7.999a1 1 0 0 0-1-1h-1a1 1 0 1 0 0 2h1a1 1 0 0 0 1-1ZM7 14a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1Zm-2.536-2.464a1 1 0 0 0-1.414 0l-.707.707a1 1 0 0 0 1.414 1.414l.707-.707a1 1 0 0 0 0-1.414Zm0-8.486A1 1 0 0 1 3.05 4.464l-.707-.707a1 1 0 0 1 1.414-1.414l.707.707ZM3 8a1 1 0 0 0-1-1H1a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Z"
+                    />
+                  </svg>
+                  <svg
+                    x-show="themePreference == 'system'"
+                    viewBox="0 0 16 16"
+                    class="h-4 w-4 fill-slate-400 dark:hidden"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M7 1a1 1 0 0 1 2 0v1a1 1 0 1 1-2 0V1Zm4 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm2.657-5.657a1 1 0 0 0-1.414 0l-.707.707a1 1 0 0 0 1.414 1.414l.707-.707a1 1 0 0 0 0-1.414Zm-1.415 11.313-.707-.707a1 1 0 0 1 1.415-1.415l.707.708a1 1 0 0 1-1.415 1.414ZM16 7.999a1 1 0 0 0-1-1h-1a1 1 0 1 0 0 2h1a1 1 0 0 0 1-1ZM7 14a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1Zm-2.536-2.464a1 1 0 0 0-1.414 0l-.707.707a1 1 0 0 0 1.414 1.414l.707-.707a1 1 0 0 0 0-1.414Zm0-8.486A1 1 0 0 1 3.05 4.464l-.707-.707a1 1 0 0 1 1.414-1.414l.707.707ZM3 8a1 1 0 0 0-1-1H1a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Z"
+                    />
+                  </svg>
+                  <svg
+                    x-show="themePreference != 'system'"
+                    viewBox="0 0 16 16"
+                    class="hidden h-4 w-4 fill-primary dark:block"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M7.23 3.333C7.757 2.905 7.68 2 7 2a6 6 0 1 0 0 12c.68 0 .758-.905.23-1.332A5.989 5.989 0 0 1 5 8c0-1.885.87-3.568 2.23-4.668ZM12 5a1 1 0 0 1 1 1 1 1 0 0 0 1 1 1 1 0 1 1 0 2 1 1 0 0 0-1 1 1 1 0 1 1-2 0 1 1 0 0 0-1-1 1 1 0 1 1 0-2 1 1 0 0 0 1-1 1 1 0 0 1 1-1Z"
+                    />
+                  </svg>
+                  <svg
+                    x-show="themePreference == 'system'"
+                    viewBox="0 0 16 16"
+                    class="hidden h-4 w-4 fill-slate-400 dark:block"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      clipRule="evenodd"
+                      d="M7.23 3.333C7.757 2.905 7.68 2 7 2a6 6 0 1 0 0 12c.68 0 .758-.905.23-1.332A5.989 5.989 0 0 1 5 8c0-1.885.87-3.568 2.23-4.668ZM12 5a1 1 0 0 1 1 1 1 1 0 0 0 1 1 1 1 0 1 1 0 2 1 1 0 0 0-1 1 1 1 0 1 1-2 0 1 1 0 0 0-1-1 1 1 0 1 1 0-2 1 1 0 0 0 1-1 1 1 0 0 1 1-1Z"
+                    />
+                  </svg>
+                </button>
+                <ul
+                  x-cloak
+                  x-show="themePickerOpen"
+                  @click.outside="themePickerOpen = false"
+                  @keydown.escape="themePickerOpen = false"
+                  x-transition:enter="transition ease-out duration-200"
+                  x-transition:enter-start="opacity-0 translate-y-1"
+                  x-transition:enter-end="opacity-100 translate-y-0"
+                  x-transition:leave="transition ease-in duration-150"
+                  x-transition:leave-start="opacity-100 translate-y-0"
+                  x-transition:leave-end="opacity-0 translate-y-1"
+                  class="absolute left-1/2 top-full mt-3 w-36 -translate-x-1/2 space-y-1 rounded-xl bg-white p-3 text-sm font-medium shadow-md shadow-black/5 ring-1 ring-black/5 dark:bg-slate-800 dark:ring-white/5"
+                >
+                  <li
+                    x-show="themePreference != 'system'"
+                    @click="setThemePreference('light'); themePickerOpen = false"
+                    class="flex cursor-pointer select-none items-center rounded-[0.625rem] bg-slate-100 p-1 text-primary dark:bg-transparent dark:text-slate-400 hover:dark:bg-slate-900"
+                  >
+                    <div
+                      class="rounded-md bg-white p-1 shadow ring-1 ring-slate-900/5 dark:bg-slate-700 dark:ring-inset dark:ring-white/5"
+                    >
+                      <svg
+                        viewBox="0 0 16 16"
+                        class="h-4 w-4 fill-primary dark:fill-slate-400"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M7 1a1 1 0 0 1 2 0v1a1 1 0 1 1-2 0V1Zm4 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm2.657-5.657a1 1 0 0 0-1.414 0l-.707.707a1 1 0 0 0 1.414 1.414l.707-.707a1 1 0 0 0 0-1.414Zm-1.415 11.313-.707-.707a1 1 0 0 1 1.415-1.415l.707.708a1 1 0 0 1-1.415 1.414ZM16 7.999a1 1 0 0 0-1-1h-1a1 1 0 1 0 0 2h1a1 1 0 0 0 1-1ZM7 14a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1Zm-2.536-2.464a1 1 0 0 0-1.414 0l-.707.707a1 1 0 0 0 1.414 1.414l.707-.707a1 1 0 0 0 0-1.414Zm0-8.486A1 1 0 0 1 3.05 4.464l-.707-.707a1 1 0 0 1 1.414-1.414l.707.707ZM3 8a1 1 0 0 0-1-1H1a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Z"
+                        />
+                      </svg>
+                    </div>
+                    <div class="ml-3">Light</div>
+                  </li>
+                  <li
+                    x-show="themePreference == 'system'"
+                    @click="setThemePreference('light'); themePickerOpen = false"
+                    class="flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 text-slate-700 hover:bg-slate-100 dark:text-slate-400 hover:dark:bg-slate-900"
+                  >
+                    <div
+                      class="rounded-md bg-white p-1 shadow ring-1 ring-slate-900/5 dark:bg-slate-700 dark:ring-inset dark:ring-white/5"
+                    >
+                      <svg
+                        viewBox="0 0 16 16"
+                        class="h-4 w-4 fill-slate-400"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M7 1a1 1 0 0 1 2 0v1a1 1 0 1 1-2 0V1Zm4 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm2.657-5.657a1 1 0 0 0-1.414 0l-.707.707a1 1 0 0 0 1.414 1.414l.707-.707a1 1 0 0 0 0-1.414Zm-1.415 11.313-.707-.707a1 1 0 0 1 1.415-1.415l.707.708a1 1 0 0 1-1.415 1.414ZM16 7.999a1 1 0 0 0-1-1h-1a1 1 0 1 0 0 2h1a1 1 0 0 0 1-1ZM7 14a1 1 0 1 1 2 0v1a1 1 0 1 1-2 0v-1Zm-2.536-2.464a1 1 0 0 0-1.414 0l-.707.707a1 1 0 0 0 1.414 1.414l.707-.707a1 1 0 0 0 0-1.414Zm0-8.486A1 1 0 0 1 3.05 4.464l-.707-.707a1 1 0 0 1 1.414-1.414l.707.707ZM3 8a1 1 0 0 0-1-1H1a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Z"
+                        />
+                      </svg>
+                    </div>
+                    <div class="ml-3">Light</div>
+                  </li>
+                  <li
+                    x-show="themePreference != 'system'"
+                    @click="setThemePreference('dark'); themePickerOpen = false"
+                    class="flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 text-slate-700 hover:bg-slate-100 dark:bg-slate-900/40 dark:text-primary"
+                  >
+                    <div
+                      class="rounded-md bg-white p-1 shadow ring-1 ring-slate-900/5 dark:bg-slate-700 dark:ring-inset dark:ring-white/5"
+                    >
+                      <svg
+                        viewBox="0 0 16 16"
+                        class="h-4 w-4 fill-slate-400 dark:fill-primary"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M7.23 3.333C7.757 2.905 7.68 2 7 2a6 6 0 1 0 0 12c.68 0 .758-.905.23-1.332A5.989 5.989 0 0 1 5 8c0-1.885.87-3.568 2.23-4.668ZM12 5a1 1 0 0 1 1 1 1 1 0 0 0 1 1 1 1 0 1 1 0 2 1 1 0 0 0-1 1 1 1 0 1 1-2 0 1 1 0 0 0-1-1 1 1 0 1 1 0-2 1 1 0 0 0 1-1 1 1 0 0 1 1-1Z"
+                        />
+                      </svg>
+                    </div>
+                    <div class="ml-3">Dark</div>
+                  </li>
+                  <li
+                    x-show="themePreference == 'system'"
+                    @click="setThemePreference('dark'); themePickerOpen = false"
+                    class="flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 text-slate-700 hover:bg-slate-100 dark:text-slate-400 hover:dark:bg-slate-900"
+                  >
+                    <div
+                      class="rounded-md bg-white p-1 shadow ring-1 ring-slate-900/5 dark:bg-slate-700 dark:ring-inset dark:ring-white/5"
+                    >
+                      <svg
+                        viewBox="0 0 16 16"
+                        class="h-4 w-4 fill-slate-400"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M7.23 3.333C7.757 2.905 7.68 2 7 2a6 6 0 1 0 0 12c.68 0 .758-.905.23-1.332A5.989 5.989 0 0 1 5 8c0-1.885.87-3.568 2.23-4.668ZM12 5a1 1 0 0 1 1 1 1 1 0 0 0 1 1 1 1 0 1 1 0 2 1 1 0 0 0-1 1 1 1 0 1 1-2 0 1 1 0 0 0-1-1 1 1 0 1 1 0-2 1 1 0 0 0 1-1 1 1 0 0 1 1-1Z"
+                        />
+                      </svg>
+                    </div>
+                    <div class="ml-3">Dark</div>
+                  </li>
+                  <li
+                    x-show="themePreference != 'system'"
+                    @click="setThemePreference('system'); themePickerOpen = false"
+                    class="flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 text-slate-700 hover:bg-slate-100 dark:text-slate-400 hover:dark:bg-slate-900"
+                  >
+                    <div
+                      class="rounded-md bg-white p-1 shadow ring-1 ring-slate-900/5 dark:bg-slate-700 dark:ring-inset dark:ring-white/5"
+                    >
+                      <svg
+                        viewBox="0 0 16 16"
+                        class="h-4 w-4 fill-slate-400"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M1 4a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3h-1.5l.31 1.242c.084.333.36.573.63.808.091.08.182.158.264.24A1 1 0 0 1 11 15H5a1 1 0 0 1-.704-1.71c.082-.082.173-.16.264-.24.27-.235.546-.475.63-.808L5.5 11H4a3 3 0 0 1-3-3V4Zm3-1a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4Z"
+                        />
+                      </svg>
+                    </div>
+                    <div class="ml-3">System</div>
+                  </li>
+                  <li
+                    x-show="themePreference == 'system'"
+                    @click="setThemePreference('system'); themePickerOpen = false"
+                    class="flex cursor-pointer select-none items-center rounded-[0.625rem] bg-slate-100 p-1 text-primary dark:bg-slate-900/40"
+                  >
+                    <div
+                      class="rounded-md bg-white p-1 shadow ring-1 ring-slate-900/5 dark:bg-slate-700 dark:ring-inset dark:ring-white/5"
+                    >
+                      <svg
+                        viewBox="0 0 16 16"
+                        class="h-4 w-4 fill-primary"
+                        aria-hidden="true"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          clipRule="evenodd"
+                          d="M1 4a3 3 0 0 1 3-3h8a3 3 0 0 1 3 3v4a3 3 0 0 1-3 3h-1.5l.31 1.242c.084.333.36.573.63.808.091.08.182.158.264.24A1 1 0 0 1 11 15H5a1 1 0 0 1-.704-1.71c.082-.082.173-.16.264-.24.27-.235.546-.475.63-.808L5.5 11H4a3 3 0 0 1-3-3V4Zm3-1a1 1 0 0 0-1 1v4a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4Z"
+                        />
+                      </svg>
+                    </div>
+                    <div class="ml-3">System</div>
+                  </li>
+                </ul>
+              </div>
               <a
                 class="flex items-center justify-center rounded-md bg-primary px-3 py-2 text-sm font-semibold text-heading-inverted shadow-sm hover:bg-primary-hover focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
                 href="#"
