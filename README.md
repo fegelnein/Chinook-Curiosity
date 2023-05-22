@@ -8,6 +8,10 @@
 
 ## ChangeLog
 
+## 2023-05-22
+
+- Theme-Wechsler korrigiert
+
 ## 2023-05-18
 
 - Schriften als CSS-Variablen

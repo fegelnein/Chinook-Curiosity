@@ -17,9 +17,19 @@
     --color-heading-hover: 51 65 85; /* slate-700 */
     --color-heading-inverted: 255 255 255; /* white */
     --color-heading-inverted-hover: 203 213 225; /* slate-300 */
-    --color-menu-button-bg: 30 41 59; /* slate-800 */
-    --color-menu-button-bg-hover: 51 65 85; /* slate-700 */
+    --color-menu-button-icon: 148 163 184; /* slate-400 */
+    --color-menu-button-bg: 51 65 85; /* slate-700 */
+    --color-menu-button-bg-hover: 30 41 59; /* slate-800 */
+    --color-themepicker-icon: 148 163 184; /* slate-400 */
+    --color-themepicker-icon-bg: 255 255 255; /* white */
+    --color-themepicker-bg: 255 255 255; /* white */
+    --color-themepicker-text: 51 65 85; /* slate-700 */
+    --color-themepicker-text-bg-hover: 241 245 249; /* slate-100 */
     --color-hero-blend: 71 85 105; /* slate-600 */
+    --color-dark-themepicker-icon-bg: 51 65 85; /* slate-700 */
+    --color-dark-themepicker-bg: 30 41 59; /* slate-800 */
+    --color-dark-themepicker-text: 148 163 184; /* slate-400 */
+    --color-dark-themepicker-text-bg-hover: 15 23 42; /* slate-900 */
     --font-sans: "Inter var";
   }
 
