@@ -8,6 +8,11 @@
 
 ## ChangeLog
 
+## 2023-05-23
+
+- Icons getauscht
+- Theme-Wechsler korrigiert
+
 ## 2023-05-22
 
 - Theme-Wechsler korrigiert
