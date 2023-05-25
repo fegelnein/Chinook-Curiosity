@@ -8,6 +8,11 @@
 
 ## ChangeLog
 
+## 2023-05-25
+
+- DropDown Menü für DarkMode angepasst
+- Korrektur in Tailwind Config
+
 ## 2023-05-23
 
 - Icons getauscht

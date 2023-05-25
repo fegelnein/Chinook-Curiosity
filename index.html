@@ -100,7 +100,7 @@
               </div>
 
               <!-- Theme picker -->
-              <div class="relative z-10">
+              <div class="relative">
                 <label class="sr-only">Theme</label>
                 <button
                   @click="themePickerOpen = ! themePickerOpen"
@@ -144,7 +144,7 @@
                   x-transition:leave="transition ease-in duration-150"
                   x-transition:leave-start="opacity-100 translate-y-0"
                   x-transition:leave-end="opacity-0 translate-y-1"
-                  class="absolute right-0 top-full mt-3 w-36 space-y-1 rounded-xl bg-themepicker-bg p-3 text-sm font-medium shadow-md shadow-black/5 ring-1 ring-black/5 dark:bg-dark-themepicker-bg dark:ring-white/5"
+                  class="absolute right-0 top-full z-10 mt-3 w-36 space-y-1 rounded-xl bg-themepicker-bg p-3 text-sm font-medium shadow-md shadow-black/5 ring-1 ring-black/5 dark:bg-dark-themepicker-bg dark:ring-white/5"
                 >
                   <li
                     @click="setThemePreference('light'); themePickerOpen = false"
@@ -281,6 +281,7 @@
                   </svg>
                 </button>
                 <div
+                  x-cloak
                   x-show="isOpen_2"
                   @click.outside="isOpen_2 = false"
                   @keydown.escape="isOpen_2 = false"
@@ -290,32 +291,32 @@
                   x-transition:leave="transition ease-in duration-150"
                   x-transition:leave-start="opacity-100 translate-y-0"
                   x-transition:leave-end="opacity-0 translate-y-1"
-                  class="absolute -left-8 top-full z-10 mt-3 w-screen max-w-xs transform overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-gray-900/10"
+                  class="absolute -left-8 top-full z-10 mt-3 w-screen max-w-xs rounded-lg bg-menu-bg shadow-lg shadow-black/5 ring-1 ring-black/5 dark:bg-dark-menu-bg dark:ring-white/5"
                 >
                   <div class="p-2">
                     <div
-                      class="group relative rounded-lg p-2 text-sm leading-6 hover:bg-gray-200"
+                      class="relative cursor-pointer select-none rounded-lg p-2 text-sm font-medium leading-6 hover:bg-menu-text-bg-hover dark:hover:bg-dark-menu-text-bg-hover dark:active:bg-dark-menu-text-bg-hover/40"
                     >
                       <a
-                        class="font-medium text-heading active:text-primary group-hover:text-heading-hover"
+                        class="text-heading active:text-primary dark:text-dark-heading"
                         href="#"
                         ><nobr>Sub menu item 1</nobr></a
                       >
                     </div>
                     <div
-                      class="group relative rounded-lg p-2 text-sm leading-6 hover:bg-gray-200"
+                      class="relative cursor-pointer select-none rounded-lg p-2 text-sm font-medium leading-6 hover:bg-menu-text-bg-hover dark:hover:bg-dark-menu-text-bg-hover dark:active:bg-dark-menu-text-bg-hover/40"
                     >
                       <a
-                        class="font-medium text-heading active:text-primary group-hover:text-heading-hover"
+                        class="text-heading active:text-primary dark:text-dark-heading"
                         href="#"
                         ><nobr>Sub menu item 2</nobr></a
                       >
                     </div>
                     <div
-                      class="group relative rounded-lg p-2 text-sm leading-6 hover:bg-gray-200"
+                      class="relative cursor-pointer select-none rounded-lg p-2 text-sm font-medium leading-6 hover:bg-menu-text-bg-hover dark:hover:bg-dark-menu-text-bg-hover dark:active:bg-dark-menu-text-bg-hover/40"
                     >
                       <a
-                        class="font-medium text-heading active:text-primary group-hover:text-heading-hover"
+                        class="text-heading active:text-primary dark:text-dark-heading"
                         href="#"
                         ><nobr>Sub menu item 3</nobr></a
                       >
@@ -489,6 +490,7 @@
 
                     <!-- Dropdown menu -->
                     <div
+                      x-cloak
                       x-show="isOpen_2m"
                       @click.outside="isOpen_2m = false"
                       @keydown.escape="isOpen_2m = false"

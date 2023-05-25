@@ -9,33 +9,46 @@
     --color-primary-hover: 2 132 199; /* sky-600 */
     --color-secondary: 224 242 254; /* sky-100 */
     --color-secondary-hover: 226 232 240; /* slate-200 */
+
     --color-body: 241 245 249; /* slate-100 */
     --color-header: 15 23 42; /* slate-900 */
-    --color-text: 100 116 139; /* slate-500 */
-    --color-text-muted: 186 230 253; /* sky-200 */
-    --color-heading: 2 6 23; /* slate-900 */
-    --color-heading-hover: 51 65 85; /* slate-700 */
-    --color-heading-inverted: 255 255 255; /* white */
-    --color-heading-inverted-hover: 203 213 225; /* slate-300 */
+
+    --color-themepicker-icon: 148 163 184; /* slate-400 */
+    --color-themepicker-icon-bg: 255 255 255; /* white */
+    --color-dark-themepicker-icon-bg: 51 65 85; /* slate-700 */
+    --color-themepicker-bg: 255 255 255; /* white */
+    --color-dark-themepicker-bg: 30 41 59; /* slate-800 */
+    --color-themepicker-text: 51 65 85; /* slate-700 */
+    --color-dark-themepicker-text: 148 163 184; /* slate-400 */
+    --color-themepicker-text-bg-hover: 241 245 249; /* slate-100 */
+    --color-dark-themepicker-text-bg-hover: 15 23 42; /* slate-900 */
+
+    --color-menu-bg: 255 255 255; /* white */
+    --color-dark-menu-bg: 30 41 59; /* slate-800 */
+    --color-menu-text-bg-hover: 241 245 249; /* slate-100 */
+    --color-dark-menu-text-bg-hover: 15 23 42; /* slate-900 */
+
     --color-menu-button-icon: 148 163 184; /* slate-400 */
     --color-menu-button-bg: 51 65 85; /* slate-700 */
     --color-menu-button-bg-hover: 30 41 59; /* slate-800 */
-    --color-themepicker-icon: 148 163 184; /* slate-400 */
-    --color-themepicker-icon-bg: 255 255 255; /* white */
-    --color-themepicker-bg: 255 255 255; /* white */
-    --color-themepicker-text: 51 65 85; /* slate-700 */
-    --color-themepicker-text-bg-hover: 241 245 249; /* slate-100 */
+
     --color-hero-blend: 71 85 105; /* slate-600 */
-    --color-dark-themepicker-icon-bg: 51 65 85; /* slate-700 */
-    --color-dark-themepicker-bg: 30 41 59; /* slate-800 */
-    --color-dark-themepicker-text: 148 163 184; /* slate-400 */
-    --color-dark-themepicker-text-bg-hover: 15 23 42; /* slate-900 */
+
+    --color-heading: 2 6 23; /* slate-900 */
+    --color-dark-heading: 148 163 184; /* slate-400 */
+    --color-heading-hover: 51 65 85; /* slate-700 */
+    --color-heading-inverted: 255 255 255; /* white */
+    --color-heading-inverted-hover: 203 213 225; /* slate-300 */
+    --color-text: 100 116 139; /* slate-500 */
+    --color-text-muted: 186 230 253; /* sky-200 */
+
     --font-sans: "Inter var";
   }
 
   .theme-juergenschadek {
     --color-primary: 0 209 219; /* #00D1DB */
     --color-secondary: 101 117 118; /* #657576 */
+
     --font-sans: "Inter var";
     --font-heading: "Gotham Ultra", sans-serif;
     --font-accent: "Hugme", serif;
@@ -55,6 +68,7 @@
     --color-menu-button-bg: 31 41 55; /* gray-800 */
     --color-menu-button-bg-hover: 55 65 81; /* gray-700 */
     --color-hero-blend: 55 65 81; /* gray-700 */
+
     --font-sans: "Inter var";
   }
 }
