@@ -18,7 +18,9 @@ export default {
         "secondary-hover": "rgb(var(--color-secondary-hover) / <alpha-value>)",
 
         body: "rgb(var(--color-body) / <alpha-value>)",
+        "dark-body": "rgb(var(--color-dark-body) / <alpha-value>)",
         header: "rgb(var(--color-header) / <alpha-value>)",
+        "dark-header": "rgb(var(--color-dark-header) / <alpha-value>)",
 
         "themepicker-icon":
           "rgb(var(--color-themepicker-icon) / <alpha-value>)",
@@ -29,10 +31,6 @@ export default {
         "themepicker-bg": "rgb(var(--color-themepicker-bg) / <alpha-value>)",
         "dark-themepicker-bg":
           "rgb(var(--color-dark-themepicker-bg) / <alpha-value>)",
-        "themepicker-text":
-          "rgb(var(--color-themepicker-text) / <alpha-value>)",
-        "dark-themepicker-text":
-          "rgb(var(--color-dark-themepicker-text) / <alpha-value>)",
         "themepicker-text-bg-hover":
           "rgb(var(--color-themepicker-text-bg-hover) / <alpha-value>)",
         "dark-themepicker-text-bg-hover":
@@ -45,9 +43,6 @@ export default {
         "dark-menu-text-bg-hover":
           "rgb(var(--color-dark-menu-text-bg-hover) / <alpha-value>)",
 
-        text: "rgb(var(--color-text) / <alpha-value>)",
-        "text-muted": "rgb(var(--color-text-muted) / <alpha-value>)",
-
         "menu-button-icon":
           "rgb(var(--color-menu-button-icon) / <alpha-value>)",
         "menu-button-bg": "rgb(var(--color-menu-button-bg) / <alpha-value>)",
@@ -55,14 +50,22 @@ export default {
           "rgb(var(--color-menu-button-bg-hover) / <alpha-value>)",
 
         "hero-blend": "rgb(var(--color-hero-blend) / <alpha-value>)",
+        "dark-hero-blend": "rgb(var(--color-dark-hero-blend) / <alpha-value>)",
 
         heading: "rgb(var(--color-heading) / <alpha-value>)",
-        "dark-heading": "rgb(var(--color-dark-heading) / <alpha-value>)",
-        "heading-hover": "rgb(var(--color-heading-hover) / <alpha-value>)",
         "heading-inverted":
           "rgb(var(--color-heading-inverted) / <alpha-value>)",
-        "heading-inverted-hover":
-          "rgb(var(--color-heading-inverted-hover) / <alpha-value>)",
+        text: "rgb(var(--color-text) / <alpha-value>)",
+        "text-inverted": "rgb(var(--color-text-inverted) / <alpha-value>)",
+        "text-muted": "rgb(var(--color-text-muted) / <alpha-value>)",
+        menu: "rgb(var(--color-menu) / <alpha-value>)",
+        "menu-hover": "rgb(var(--color-menu-hover) / <alpha-value>)",
+        "menu-inverted": "rgb(var(--color-menu-inverted) / <alpha-value>)",
+        "menu-inverted-hover":
+          "rgb(var(--color-menu-inverted-hover) / <alpha-value>)",
+        submenu: "rgb(var(--color-submenu) / <alpha-value>)",
+        "submenu-inverted":
+          "rgb(var(--color-submenu-inverted) / <alpha-value>)",
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...defaultTheme.fontFamily.sans],

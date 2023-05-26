@@ -11,15 +11,15 @@
     --color-secondary-hover: 226 232 240; /* slate-200 */
 
     --color-body: 241 245 249; /* slate-100 */
-    --color-header: 15 23 42; /* slate-900 */
+    --color-dark-body: 15 23 42; /* slate-900 */
+    --color-header: 8 47 73; /* sky-950 */
+    --color-dark-header: 15 23 42; /* slate-900 */
 
     --color-themepicker-icon: 148 163 184; /* slate-400 */
     --color-themepicker-icon-bg: 255 255 255; /* white */
     --color-dark-themepicker-icon-bg: 51 65 85; /* slate-700 */
     --color-themepicker-bg: 255 255 255; /* white */
     --color-dark-themepicker-bg: 30 41 59; /* slate-800 */
-    --color-themepicker-text: 51 65 85; /* slate-700 */
-    --color-dark-themepicker-text: 148 163 184; /* slate-400 */
     --color-themepicker-text-bg-hover: 241 245 249; /* slate-100 */
     --color-dark-themepicker-text-bg-hover: 15 23 42; /* slate-900 */
 
@@ -32,15 +32,20 @@
     --color-menu-button-bg: 51 65 85; /* slate-700 */
     --color-menu-button-bg-hover: 30 41 59; /* slate-800 */
 
-    --color-hero-blend: 71 85 105; /* slate-600 */
+    --color-hero-blend: 2 132 199; /* sky-600 */
+    --color-dark-hero-blend: 71 85 105; /* slate-600 */
 
-    --color-heading: 2 6 23; /* slate-900 */
-    --color-dark-heading: 148 163 184; /* slate-400 */
-    --color-heading-hover: 51 65 85; /* slate-700 */
+    --color-heading: 15 23 42; /* slate-900 */
     --color-heading-inverted: 255 255 255; /* white */
-    --color-heading-inverted-hover: 203 213 225; /* slate-300 */
     --color-text: 100 116 139; /* slate-500 */
+    --color-text-inverted: 148 163 184; /* slate-400 */
     --color-text-muted: 186 230 253; /* sky-200 */
+    --color-menu: 255 255 255; /* white */
+    --color-menu-hover: 203 213 225; /* slate-300 */
+    --color-menu-inverted: 226 232 240; /* slate-200 */
+    --color-menu-inverted-hover: 203 213 225; /* slate-300 */
+    --color-submenu: 51 65 85; /* slate-700 */
+    --color-submenu-inverted: 148 163 184; /* slate-400 */
 
     --font-sans: "Inter var";
   }

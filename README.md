@@ -8,6 +8,10 @@
 
 ## ChangeLog
 
+## 2023-05-26
+
+- DarkMode umgesetzt
+
 ## 2023-05-25
 
 - DropDown Menü für DarkMode angepasst
