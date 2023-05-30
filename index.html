@@ -194,8 +194,8 @@
                   </li>
                   <li
                     @click="setThemePreference('system'); themePickerOpen = false"
-                    class="flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 hover:bg-themepicker-text-bg-hover dark:text-submenu-inverted hover:dark:bg-dark-themepicker-text-bg-hover"
-                    :class="themePreference == 'system' ? 'text-primary dark:bg-slate-900/40' : 'text-submenu'"
+                    class="flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 hover:bg-themepicker-text-bg-hover hover:dark:bg-dark-themepicker-text-bg-hover"
+                    :class="themePreference == 'system' ? 'text-primary dark:bg-slate-900/40' : 'text-submenu dark:text-submenu-inverted'"
                   >
                     <div
                       class="rounded-md bg-themepicker-bg p-1 shadow ring-1 ring-slate-900/5 dark:bg-dark-themepicker-icon-bg dark:ring-inset dark:ring-white/5"
@@ -507,8 +507,8 @@
                         </li>
                         <li
                           @click="setThemePreference('system'); themePickerOpen = false"
-                          class="flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 hover:bg-themepicker-text-bg-hover dark:text-submenu-inverted hover:dark:bg-dark-themepicker-text-bg-hover"
-                          :class="themePreference == 'system' ? 'text-primary dark:bg-slate-900/40' : 'text-submenu'"
+                          class="flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 hover:bg-themepicker-text-bg-hover hover:dark:bg-dark-themepicker-text-bg-hover"
+                          :class="themePreference == 'system' ? 'text-primary dark:bg-slate-900/40' : 'text-submenu dark:text-submenu-inverted'"
                         >
                           <div
                             class="rounded-md bg-themepicker-bg p-1 shadow ring-1 ring-slate-900/5 dark:bg-dark-themepicker-icon-bg dark:ring-inset dark:ring-white/5"
