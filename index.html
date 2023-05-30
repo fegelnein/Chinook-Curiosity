@@ -110,8 +110,8 @@
                 >
                   <svg
                     viewBox="0 0 16 16"
-                    class="h-4 w-4 fill-themepicker-icon dark:hidden"
-                    :class="{ '!fill-primary': themePreference != 'system' }"
+                    class="h-4 w-4 dark:hidden"
+                    :class="themePreference != 'system' ? 'fill-primary' : 'fill-themepicker-icon'"
                     aria-hidden="true"
                   >
                     <path
@@ -122,8 +122,8 @@
                   </svg>
                   <svg
                     viewBox="0 0 16 16"
-                    class="hidden h-4 w-4 fill-themepicker-icon dark:block"
-                    :class="{ '!fill-primary': themePreference != 'system' }"
+                    class="hidden h-4 w-4 dark:block"
+                    :class="themePreference != 'system' ? 'fill-primary' : 'fill-themepicker-icon'"
                     aria-hidden="true"
                   >
                     <path
@@ -148,16 +148,16 @@
                 >
                   <li
                     @click="setThemePreference('light'); themePickerOpen = false"
-                    class="flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 text-submenu hover:bg-themepicker-text-bg-hover dark:bg-transparent dark:text-submenu-inverted hover:dark:bg-dark-themepicker-text-bg-hover"
-                    :class="{ '!text-primary dark:!text-submenu-inverted': themePreference != 'system' }"
+                    class="flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 hover:bg-themepicker-text-bg-hover dark:bg-transparent dark:text-submenu-inverted hover:dark:bg-dark-themepicker-text-bg-hover"
+                    :class="themePreference != 'system' ? 'text-primary' : 'text-submenu'"
                   >
                     <div
                       class="rounded-md bg-themepicker-bg p-1 shadow ring-1 ring-slate-900/5 dark:bg-dark-themepicker-icon-bg dark:ring-inset dark:ring-white/5"
                     >
                       <svg
                         viewBox="0 0 16 16"
-                        class="h-4 w-4 fill-themepicker-icon dark:fill-themepicker-icon"
-                        :class="{ '!fill-primary dark:!fill-themepicker-icon': themePreference != 'system' }"
+                        class="h-4 w-4 dark:fill-themepicker-icon"
+                        :class="themePreference != 'system' ? 'fill-primary' : 'fill-themepicker-icon'"
                         aria-hidden="true"
                       >
                         <path
@@ -171,8 +171,8 @@
                   </li>
                   <li
                     @click="setThemePreference('dark'); themePickerOpen = false"
-                    class="flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 text-submenu hover:bg-themepicker-text-bg-hover dark:text-submenu-inverted hover:dark:bg-dark-themepicker-text-bg-hover"
-                    :class="{ 'dark:bg-dark-themepicker-text-bg-hover/40 dark:!text-primary': themePreference != 'system' }"
+                    class="flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 text-submenu hover:bg-themepicker-text-bg-hover hover:dark:bg-dark-themepicker-text-bg-hover"
+                    :class="themePreference != 'system' ? 'dark:text-primary dark:bg-dark-themepicker-text-bg-hover/40' : 'dark:text-submenu-inverted'"
                   >
                     <div
                       class="rounded-md bg-themepicker-bg p-1 shadow ring-1 ring-slate-900/5 dark:bg-dark-themepicker-icon-bg dark:ring-inset dark:ring-white/5"
@@ -180,7 +180,7 @@
                       <svg
                         viewBox="0 0 16 16"
                         class="h-4 w-4 fill-slate-400"
-                        :class="{ 'dark:!fill-primary': themePreference != 'system' }"
+                        :class="themePreference != 'system' ? 'dark:fill-primary' : ''"
                         aria-hidden="true"
                       >
                         <path
@@ -194,8 +194,8 @@
                   </li>
                   <li
                     @click="setThemePreference('system'); themePickerOpen = false"
-                    class="flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 text-submenu hover:bg-themepicker-text-bg-hover dark:text-submenu-inverted hover:dark:bg-dark-themepicker-text-bg-hover"
-                    :class="{ '!text-primary dark:bg-slate-900/40': themePreference == 'system' }"
+                    class="flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 hover:bg-themepicker-text-bg-hover dark:text-submenu-inverted hover:dark:bg-dark-themepicker-text-bg-hover"
+                    :class="themePreference == 'system' ? 'text-primary dark:bg-slate-900/40' : 'text-submenu'"
                   >
                     <div
                       class="rounded-md bg-themepicker-bg p-1 shadow ring-1 ring-slate-900/5 dark:bg-dark-themepicker-icon-bg dark:ring-inset dark:ring-white/5"
@@ -203,7 +203,7 @@
                       <svg
                         viewBox="0 0 16 16"
                         class="h-4 w-4 fill-slate-400"
-                        :class="{ '!fill-primary': themePreference == 'system' }"
+                        :class="themePreference == 'system' ? 'fill-primary' : ''"
                         aria-hidden="true"
                       >
                         <path
@@ -423,8 +423,8 @@
                       >
                         <svg
                           viewBox="0 0 16 16"
-                          class="h-4 w-4 fill-themepicker-icon dark:hidden"
-                          :class="{ '!fill-primary': themePreference != 'system' }"
+                          class="h-4 w-4 dark:hidden"
+                          :class="themePreference != 'system' ? 'fill-primary' : 'fill-themepicker-icon'"
                           aria-hidden="true"
                         >
                           <path
@@ -435,8 +435,8 @@
                         </svg>
                         <svg
                           viewBox="0 0 16 16"
-                          class="hidden h-4 w-4 fill-themepicker-icon dark:block"
-                          :class="{ '!fill-primary': themePreference != 'system' }"
+                          class="hidden h-4 w-4 dark:block"
+                          :class="themePreference != 'system' ? 'fill-primary' : 'fill-themepicker-icon'"
                           aria-hidden="true"
                         >
                           <path
@@ -461,16 +461,16 @@
                       >
                         <li
                           @click="setThemePreference('light'); themePickerOpen = false"
-                          class="flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 text-submenu hover:bg-themepicker-text-bg-hover dark:bg-transparent dark:text-submenu-inverted hover:dark:bg-dark-themepicker-text-bg-hover"
-                          :class="{ '!text-primary dark:!text-submenu-inverted': themePreference != 'system' }"
+                          class="flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 hover:bg-themepicker-text-bg-hover dark:bg-transparent dark:text-submenu-inverted hover:dark:bg-dark-themepicker-text-bg-hover"
+                          :class="themePreference != 'system' ? 'text-primary' : 'text-submenu'"
                         >
                           <div
                             class="rounded-md bg-themepicker-bg p-1 shadow ring-1 ring-slate-900/5 dark:bg-dark-themepicker-icon-bg dark:ring-inset dark:ring-white/5"
                           >
                             <svg
                               viewBox="0 0 16 16"
-                              class="h-4 w-4 fill-themepicker-icon dark:fill-themepicker-icon"
-                              :class="{ '!fill-primary dark:!fill-themepicker-icon': themePreference != 'system' }"
+                              class="h-4 w-4 dark:fill-themepicker-icon"
+                              :class="themePreference != 'system' ? 'fill-primary' : 'fill-themepicker-icon'"
                               aria-hidden="true"
                             >
                               <path
@@ -484,8 +484,8 @@
                         </li>
                         <li
                           @click="setThemePreference('dark'); themePickerOpen = false"
-                          class="flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 text-submenu hover:bg-themepicker-text-bg-hover dark:text-submenu-inverted hover:dark:bg-dark-themepicker-text-bg-hover"
-                          :class="{ 'dark:bg-dark-themepicker-text-bg-hover/40 dark:!text-primary': themePreference != 'system' }"
+                          class="flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 text-submenu hover:bg-themepicker-text-bg-hover hover:dark:bg-dark-themepicker-text-bg-hover"
+                          :class="themePreference != 'system' ? 'dark:text-primary dark:bg-dark-themepicker-text-bg-hover/40' : 'dark:text-submenu-inverted'"
                         >
                           <div
                             class="rounded-md bg-themepicker-bg p-1 shadow ring-1 ring-slate-900/5 dark:bg-dark-themepicker-icon-bg dark:ring-inset dark:ring-white/5"
@@ -493,7 +493,7 @@
                             <svg
                               viewBox="0 0 16 16"
                               class="h-4 w-4 fill-slate-400"
-                              :class="{ 'dark:!fill-primary': themePreference != 'system' }"
+                              :class="themePreference != 'system' ? 'dark:fill-primary' : ''"
                               aria-hidden="true"
                             >
                               <path
@@ -507,8 +507,8 @@
                         </li>
                         <li
                           @click="setThemePreference('system'); themePickerOpen = false"
-                          class="flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 text-submenu hover:bg-themepicker-text-bg-hover dark:text-submenu-inverted hover:dark:bg-dark-themepicker-text-bg-hover"
-                          :class="{ '!text-primary dark:bg-slate-900/40': themePreference == 'system' }"
+                          class="flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 hover:bg-themepicker-text-bg-hover dark:text-submenu-inverted hover:dark:bg-dark-themepicker-text-bg-hover"
+                          :class="themePreference == 'system' ? 'text-primary dark:bg-slate-900/40' : 'text-submenu'"
                         >
                           <div
                             class="rounded-md bg-themepicker-bg p-1 shadow ring-1 ring-slate-900/5 dark:bg-dark-themepicker-icon-bg dark:ring-inset dark:ring-white/5"
@@ -516,7 +516,7 @@
                             <svg
                               viewBox="0 0 16 16"
                               class="h-4 w-4 fill-slate-400"
-                              :class="{ '!fill-primary': themePreference == 'system' }"
+                              :class="themePreference == 'system' ? 'fill-primary' : ''"
                               aria-hidden="true"
                             >
                               <path

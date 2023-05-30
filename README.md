@@ -8,6 +8,10 @@
 
 ## ChangeLog
 
+## 2023-05-30
+
+- Alpine.js x-bind Klassen für DarkMode korrigiert
+
 ## 2023-05-26
 
 - DarkMode umgesetzt
