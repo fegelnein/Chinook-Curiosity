@@ -106,13 +106,13 @@
                   @click="themePickerOpen = ! themePickerOpen"
                   role="button"
                   class="flex h-6 w-6 items-center justify-center rounded-lg bg-themepicker-icon-bg shadow-md shadow-black/5 ring-1 ring-black/5 dark:bg-dark-themepicker-icon-bg dark:ring-inset dark:ring-white/5"
-                  aria-expanded="false"
+                  :aria-expanded="themePickerOpen"
                 >
                   <svg
                     viewBox="0 0 16 16"
                     class="h-4 w-4 dark:hidden"
                     :class="themePreference != 'system' ? 'fill-primary' : 'fill-themepicker-icon'"
-                    :aria-expanded="themePickerOpen"
+                    aria-hidden="true"
                   >
                     <path
                       fillRule="evenodd"
