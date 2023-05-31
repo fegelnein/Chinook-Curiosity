@@ -21,6 +21,8 @@ export default {
         "dark-body": "rgb(var(--color-dark-body) / <alpha-value>)",
         header: "rgb(var(--color-header) / <alpha-value>)",
         "dark-header": "rgb(var(--color-dark-header) / <alpha-value>)",
+        footer: "rgb(var(--color-footer) / <alpha-value>)",
+        "dark-footer": "rgb(var(--color-dark-footer) / <alpha-value>)",
 
         "themepicker-icon":
           "rgb(var(--color-themepicker-icon) / <alpha-value>)",
@@ -55,6 +57,9 @@ export default {
         heading: "rgb(var(--color-heading) / <alpha-value>)",
         "heading-inverted":
           "rgb(var(--color-heading-inverted) / <alpha-value>)",
+        "text-hero": "rgb(var(--color-text-hero) / <alpha-value>)",
+        "text-hero-inverted":
+          "rgb(var(--color-text-hero-inverted) / <alpha-value>)",
         text: "rgb(var(--color-text) / <alpha-value>)",
         "text-inverted": "rgb(var(--color-text-inverted) / <alpha-value>)",
         "text-muted": "rgb(var(--color-text-muted) / <alpha-value>)",
