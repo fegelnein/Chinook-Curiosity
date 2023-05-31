@@ -112,7 +112,7 @@
                     viewBox="0 0 16 16"
                     class="h-4 w-4 dark:hidden"
                     :class="themePreference != 'system' ? 'fill-primary' : 'fill-themepicker-icon'"
-                    aria-hidden="true"
+                    :aria-expanded="themePickerOpen"
                   >
                     <path
                       fillRule="evenodd"
@@ -268,7 +268,7 @@
                   @click="isOpen_2 = ! isOpen_2"
                   type="button"
                   class="flex items-center gap-x-1 font-medium text-menu hover:text-menu-hover active:text-primary dark:text-menu-inverted dark:hover:text-menu-inverted-hover"
-                  aria-expanded="false"
+                  :aria-expanded="isOpen_2"
                 >
                   <nobr>Menu item 2</nobr>
                   <svg
@@ -419,7 +419,7 @@
                         @click="themePickerOpen = ! themePickerOpen"
                         role="button"
                         class="flex h-6 w-6 items-center justify-center rounded-lg bg-themepicker-icon-bg shadow-md shadow-black/5 ring-1 ring-black/5 dark:bg-dark-themepicker-icon-bg dark:ring-inset dark:ring-white/5"
-                        aria-expanded="false"
+                        :aria-expanded="themePickerOpen"
                       >
                         <svg
                           viewBox="0 0 16 16"
@@ -603,7 +603,7 @@
                       @click="isOpen_2m = ! isOpen_2m"
                       type="button"
                       class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 font-medium leading-6 text-submenu hover:bg-menu-text-bg-hover active:text-primary dark:text-submenu-inverted dark:hover:bg-dark-menu-text-bg-hover"
-                      aria-expanded="false"
+                      :aria-expanded="isOpen_2m"
                     >
                       <nobr>Menu item 2</nobr>
                       <svg
@@ -787,6 +787,7 @@
                 non cupiditate maxime doloremque iste dolores cumque nobis autem
                 voluptas tenetur.
               </p>
+
               <!-- Buttons -->
               <div
                 class="space-y-4 xs:flex xs:items-center xs:justify-center xs:gap-x-6 xs:space-y-0"
