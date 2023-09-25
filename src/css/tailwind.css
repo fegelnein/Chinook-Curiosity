@@ -5,17 +5,15 @@
 
 @layer base {
   :root {
-    --color-primary: 3 105 161; /* sky-700 */
-    --color-primary-hover: 2 132 199; /* sky-600 */
-    --color-secondary: 224 242 254; /* sky-100 */
-    --color-secondary-hover: 226 232 240; /* slate-200 */
 
     --color-body: 241 245 249; /* slate-100 */
     --color-dark-body: 15 23 42; /* slate-900 */
-    --color-header: 8 47 73; /* sky-950 */
+    --color-header: 28 38 69; /* sky-950 */
     --color-dark-header: 15 23 42; /* slate-900 */
     --color-footer: 203 213 225; /* slate-300 */
     --color-dark-footer: 15 23 42; /* slate-900 */
+
+
 
     --color-themepicker-icon: 148 163 184; /* slate-400 */
     --color-themepicker-icon-bg: 255 255 255; /* white */
@@ -77,7 +75,7 @@
     --color-menu-button-bg: 31 41 55; /* gray-800 */
     --color-menu-button-bg-hover: 55 65 81; /* gray-700 */
     --color-hero-blend: 55 65 81; /* gray-700 */
-
+    --color-top-header: 50 23 42; /* slate-900 */
     --font-sans: "Inter var";
   }
 }
