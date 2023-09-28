@@ -1,6 +1,6 @@
 {
     "rewrites": [
-      { "source": "/chinookcuriosity/:asset*", "destination": "https://chinookcuriosity.vercel.app/:asset*" },
+ 
       { "source": "/(.*)", "destination": "/" }
     ]
   }
