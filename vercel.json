@@ -1,3 +1,6 @@
 {
-    "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
+    "rewrites": [
+      { "source": "/chinook-curiousity/:asset*", "destination": "https:/chinook-curiosity.vercel.app/:asset*" },
+      { "source": "/(.*)", "destination": "/" }
+    ]
   }
