@@ -1,6 +1,6 @@
 {
     "rewrites": [
-      { "source": "/Chinook-Curiousity/:asset*", "destination": "https://chinookcuriositycenter.vercel.app/:asset*" }
- 
+      { "source": "/Chinook-Curiousity/:asset*", "destination": "https://chinookcuriositycenter.vercel.app/:asset*" },
+       { "source": "/(.*)", "destination": "/tutoring.html" }
     ]
   }
