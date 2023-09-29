@@ -19,11 +19,12 @@
     <!-- Icons -->
 
     <!-- Tailwind CSS -->
-    <link rel="stylesheet" href="./src/css/tailwind.css" />
+    
+    <link rel="stylesheet" href="/assets/index-eed12bd1.css">
   </head>
-  <body class="bg-header text-text dark:bg-dark-body dark:text-text-inverted">
+  <body class="bg-body text-text dark:bg-dark-body dark:text-text-inverted">
     <!-- Container for Header and Hero -->
-    <div class="flex  flex-col">
+    <div class="flex min-h-screen flex-col">
 
 
       <!-- Header -->
@@ -60,7 +61,7 @@
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
-                  d="M15.59 14.37a6 6 0 01-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 006.16-12.12A14.98 14.98 0 009.631 8.41m5.96 5.96a14.926 14.926 0 01-5.841 2.58m-.119-8.54a6 6 0 00-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 00-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 01-2.448-2.448 14.9 14.9 0 01.06-.312m-2.24 2.39a4.493 4.493 0 00-1.757 4.306 4.493 4.493 0 004.306-1.758M16.5 9a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0z"
+                  d="Magnifying_glass_real-removebg-preview.png"
                 />
               </svg>
               <h1
@@ -83,129 +84,135 @@
            x-data="{ isOpen_2: false }"
            class="hidden lg:flex lg:gap-x-12 "
          >
+           <a
+             class="font-medium text-menu hover:text-menu-hover active:text-primary dark:text-menu-inverted dark:hover:text-menu-inverted-hover"
+             href="./about.html"
+             ><nobr>Contest</nobr></a
+           >
+
+           <!-- Dropdown menu -->
+          
+           <a
+             class="font-medium text-menu hover:text-menu-hover active:text-primary dark:text-menu-inverted dark:hover:text-menu-inverted-hover"
+             href="./podcast.html"
+             ><nobr>Podcast</nobr></a
+           >
+           <a
+             class="font-medium text-menu hover:text-menu-hover active:text-primary dark:text-menu-inverted dark:hover:text-menu-inverted-hover"
+             href="./newsletter.html"
+             ><nobr>Newsletter</nobr></a
+           >
+           <a
+           class="font-medium text-menu hover:text-menu-hover active:text-primary dark:text-menu-inverted dark:hover:text-menu-inverted-hover"
+           href="./team.html"
+           ><nobr>Team</nobr></a
+         >
          <a
          class="font-medium text-menu hover:text-menu-hover active:text-primary dark:text-menu-inverted dark:hover:text-menu-inverted-hover"
-         href="./about.html"
-         ><nobr>Contest</nobr></a
-       >
-
-       <!-- Dropdown menu -->
-      
-       <a
-         class="font-medium text-menu hover:text-menu-hover active:text-primary dark:text-menu-inverted dark:hover:text-menu-inverted-hover"
-         href="./podcast.html"
-         ><nobr>Podcast</nobr></a
-       >
-       <a
-         class="font-medium text-menu hover:text-menu-hover active:text-primary dark:text-menu-inverted dark:hover:text-menu-inverted-hover"
-         href="./newsletter.html"
-         ><nobr>Newsletter</nobr></a
+         href="./sponsors.html"
+         ><nobr>Sponsors</nobr></a
        >
        <a
        class="font-medium text-menu hover:text-menu-hover active:text-primary dark:text-menu-inverted dark:hover:text-menu-inverted-hover"
-       href="./team.html"
-       ><nobr>Team</nobr></a
+       href="./tutoring.html"
+       ><nobr>Tutoring</nobr></a
      >
-     <a
-     class="font-medium text-menu hover:text-menu-hover active:text-primary dark:text-menu-inverted dark:hover:text-menu-inverted-hover"
-     href="./sponsors.html"
-     ><nobr>Sponsors</nobr></a
-   >
-   <a
-   class="font-medium text-menu hover:text-menu-hover active:text-primary dark:text-menu-inverted dark:hover:text-menu-inverted-hover"
-   href="./tutoring.html"
-   ><nobr>Tutoring</nobr></a
- >
          </div>
         </header>
       </div>
 
-
-    </div>
-
-    <div class="bg-header justify-center items-center">
-      <div class ="w-full h-80">
-        <img
-        class="h-full w-full object-cover  contrast-50"
-        src="./src/img/statarocket_large.jpg"
-        alt="StataRocket - A Tailwind CSS Theme"
-        />
-      </div>
-      <div class=" mt-8 flex justify-center items-center">
-    
-        <div class="w-9/12 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-
-         <div class = "flex flex-row">
-          <div>
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Post 1 welcome to our thingy
-              </h5>
+      <!-- Hero -->
+      <div class="relative flex grow bg-header dark:bg-dark-header">
+        <div
+          class="absolute inset-x-0 bottom-0 h-1/2 bg-body dark:bg-dark-body"
+        ></div>
+        <div class="container mx-auto flex max-w-screen-xl grow sm:p-6 lg:px-8">
+          <div
+            class="relative flex grow items-center justify-center shadow-lg sm:overflow-hidden sm:rounded-2xl"
+          >
+            <div class="absolute inset-0">
+              <img
+                class="h-full w-full object-cover contrast-50 blur-sm"
+                src="/assets/statarocket_large-b1de7a62.jpg"
+                alt="StataRocket - A Tailwind CSS Theme"
+              />
+              <div
+                class="absolute inset-0 bg-hero-blend opacity-70 mix-blend-multiply dark:bg-dark-hero-blend"
+              ></div>
             </div>
-            <div class = "text-lg ml-3 mt-1">By: Joe Joestar</div>
-            </div>
-            <div class="text-md">Created on: 9/50/2023</div>
-          <p class="mt-6 mb-12 font-normal text-gray-700 dark:text-gray-400">The RMJSC has two purposes: to give and to inspire. We strive to provide opportunities for junior-high students to demonstrate their knowledge of science through both theoretical and practical tests. As a team, we also have a vision of inspiring our contestants. To make this vision become a reality, we created the lab round where students will experience the fascinating first-hand application of biology, chemistry, and physics concepts in practice. The RMJSC is also designed to help give an advantage to junior high students when they enter high school by easing the transition between the two. We ourselves have found that the transition process can be confusing and burdensome.To help contestants with such a transition, we create questions that give contestants the ability to think creatively about junior high science topics and apply them to new contexts from design challenges to lab rounds. At the same time, we want to inspire more youth to pursue science and see the wonders of it. As such, while the rounds are intended to challenge, they are intended to also be fun. Youths are our future. Inspiring and aiding them on their journey will only make a better world.</p>
+            <div
+              class="relative flex flex-col gap-6 px-4 py-16 text-center sm:px-6 sm:py-24 lg:px-8 lg:py-32"
+            >
+              <h1
+                class="text-4xl font-extrabold tracking-tight text-heading-inverted sm:text-5xl lg:text-6xl"
+              >
+                Chinook Curiosity Center
+              </h1>
+              <h2
+                class="text-3xl font-bold tracking-tight text-text-hero dark:text-text-hero-inverted sm:text-3xl lg:text-3xl"
+              >
+              Student-led, non-profit initiative committed to contributing to the Calgary community by empowering youth through support and fostering their curiosity.
+              </h2>
+              <div class ="bg-header bg-opacity-80 rounded-lg p-6">
+              <p
+                class="mx-auto max-w-lg text-2xl font-semibold text-white sm:max-w-5xl"
+              >
+              Our current primary initiatives encompass tutoring, a mathematics-focused podcast, and a weekly journal. 
 
-            
-
-
-
-        </div>
-  
-      </div>
-      <div class="bg-header mb-8 justify-center items-center">
-
-        <div class=" mt-8 flex justify-center items-center">
-      
-          <div class="w-9/12 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-  
-           <div class = "flex flex-row">
-            <div>
-                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Post 2 welcome to our thingy
-                </h5>
-              </div>
-              <div class = "text-lg ml-3 mt-1">By: Joe Joestar</div>
-              </div>
-              <div class="text-md">Created on: 9/50/2023</div>
-            <p class="mt-6 mb-12 font-normal text-gray-700 dark:text-gray-400">The RMJSC has two purposes: to give and to inspire. We strive to provide opportunities for junior-high students to demonstrate their knowledge of science through both theoretical and practical tests. As a team, we also have a vision of inspiring our contestants. To make this vision become a reality, we created the lab round where students will experience the fascinating first-hand application of biology, chemistry, and physics concepts in practice. The RMJSC is also designed to help give an advantage to junior high students when they enter high school by easing the transition between the two. We ourselves have found that the transition process can be confusing and burdensome.To help contestants with such a transition, we create questions that give contestants the ability to think creatively about junior high science topics and apply them to new contexts from design challenges to lab rounds. At the same time, we want to inspire more youth to pursue science and see the wonders of it. As such, while the rounds are intended to challenge, they are intended to also be fun. Youths are our future. Inspiring and aiding them on their journey will only make a better world.</p>
-  
               
-  
-  
-  
-          </div>
+              </p>
+              <p
+              class="mt-8 mx-auto max-w-lg text-xl font-semibold text-white sm:max-w-5xl"
+            >
+            STEM-focused tutoring services to high school students: www.raiseyyctutoring.com.
+            </p>
+            <p
+            class="mt-2 mx-auto max-w-lg text-xl font-semibold text-white sm:max-w-5xl"
+          >
+         A  mathematical podcast, titled "The Enigma Express," on Spotify.
+          </p>
+      
+          <p
+          class="mt-2 mx-auto max-w-lg text-xl font-semibold text-white sm:max-w-5xl"
+        >
+       Weekly chronicle
+        </p>
+      </div>
+              <!-- Buttons -->
     
+ 
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
 
-    <div class="bg-header mb-8 justify-center items-center">
+    <!-- Main -->
+    <main class="h-96">
+      <!-- Sektion 1 -->
+      <section></section>
 
-      <div class=" mt-8 flex justify-center items-center">
-    
-        <div class="w-9/12 p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+      <!-- Sektion 2 -->
+      <section></section>
 
-         <div class = "flex flex-row">
-          <div>
-              <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Post 3 welcome to our thingy
-              </h5>
-            </div>
-            <div class = "text-lg ml-3 mt-1">By: Joe Joestar</div>
-            </div>
-            <div class="text-md">Created on: 9/50/2023</div>
-          <p class="mt-6 mb-12 font-normal text-gray-700 dark:text-gray-400">The RMJSC has two purposes: to give and to inspire. We strive to provide opportunities for junior-high students to demonstrate their knowledge of science through both theoretical and practical tests. As a team, we also have a vision of inspiring our contestants. To make this vision become a reality, we created the lab round where students will experience the fascinating first-hand application of biology, chemistry, and physics concepts in practice. The RMJSC is also designed to help give an advantage to junior high students when they enter high school by easing the transition between the two. We ourselves have found that the transition process can be confusing and burdensome.To help contestants with such a transition, we create questions that give contestants the ability to think creatively about junior high science topics and apply them to new contexts from design challenges to lab rounds. At the same time, we want to inspire more youth to pursue science and see the wonders of it. As such, while the rounds are intended to challenge, they are intended to also be fun. Youths are our future. Inspiring and aiding them on their journey will only make a better world.</p>
+      <!-- Sektion 3 -->
+      <section>
+        <!-- Artikel 1 -->
+        <article></article>
 
-            
+        <!-- Artikel 2 -->
+        <article></article>
 
+        <!-- Artikel 3 -->
+        <article></article>
+      </section>
+    </main>
 
+    <!-- Sidebar -->
+    <aside></aside>
 
-        </div>
-  
-      </div>
-  </div>
-
-
-    
     <!-- Footer -->
-    <div class ="bottom-0">
     <footer
       class="bg-footer dark:bg-dark-footer"
       aria-labelledby="footer-heading"
@@ -322,8 +329,8 @@
         </div>
       </div>
     </footer>
-  </div>
-    <!-- Alpine.js -->
 
+    <!-- Alpine.js -->
+   
   </body>
 </html>
