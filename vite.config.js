@@ -22,7 +22,7 @@ build: {
         postcssConfig:'./postcss.config.js',
         packagelock:'./package-lock.json',
         pacakge:'./package.json',
-   
+        package:'./src/css/tailwind.css',
         // List all files you want in your build
       }
     }
