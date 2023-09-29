@@ -4,6 +4,7 @@
   x-init="window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => setSystemTheme(e.matches ? 'dark' : 'light'))"
   :class="{ dark: darkMode }"
   lang="de"
+
 >
   <head>
     <meta charset="UTF-8" />
@@ -19,7 +20,10 @@
     <!-- Icons -->
 
     <!-- Tailwind CSS -->
-    <link rel="stylesheet" href="./src/css/tailwind.css" />
+    
+    <script type="module" crossorigin src="/assets/index-297c330b.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/podcast-e1b2a65f.js">
+    <link rel="stylesheet" href="/assets/podcast-d3538452.css">
   </head>
   <body class="bg-body text-text dark:bg-dark-body dark:text-text-inverted">
     <!-- Container for Header and Hero -->
@@ -132,7 +136,7 @@
             <div class="absolute inset-0">
               <img
                 class="h-full w-full object-cover contrast-50 blur-sm"
-                src="./src/img/statarocket_large.jpg"
+                src="/assets/statarocket_large-b1de7a62.jpg"
                 alt="StataRocket - A Tailwind CSS Theme"
               />
               <div
@@ -330,6 +334,6 @@
     </footer>
 
     <!-- Alpine.js -->
-   
+    
   </body>
 </html>
