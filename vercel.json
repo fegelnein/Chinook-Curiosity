@@ -1,6 +1,3 @@
 {
-    "rewrites": [
-      { "source": "/chinookcuriositycenter/dist:", "destination": "https://chinookcuriositycenter.vercel.app/*" },
-      { "source": "/(.*)", "destination": "/" }
-    ]
-  }
+  "routes": [{ "src": "/dist/[^.]+", "dest": "/", "status": 200 }]
+}
